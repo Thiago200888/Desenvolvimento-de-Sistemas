@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class casa {
+            endereço;
+            numeroQuartos;
+            area;
+
+            constructor(endereço, numeroQuartos, area) {
+                this.endereço = endereço;
+                this.numeroQuartos = numeroQuartos;
+                this.area = area;
+            }
+
+            informacoesCasa() {
+                return (  this.endereço + this.numeroQuartos + this.area);
+            }
+            
+        }
+
+        let casa1 = new casa (" Rua palito Arnaldo ", " 1 ", " 200cm² ")
+        console.log(casa1)
+        console.log(casa1.informacoesCasa());
+    </script>
+</body>
+</html>

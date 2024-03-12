@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class filme {
+            titulo;
+            genero;
+            duraçao;
+
+            constructor(titulo, genero, duraçao) {
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duraçao = duraçao;
+            }
+
+            informacoesFilme() {
+                return (this.titulo + this.genero + this.duraçao);
+            }
+        }
+
+        let filme1 = new filme ("Doce Vingança ", "Terror/Crime ", "1h 48m");
+        console.log(filme1)
+        console.log(filme1.informacoesFilme())
+    </script>
+</body>
+</html>

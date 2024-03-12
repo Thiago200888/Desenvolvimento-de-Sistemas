@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class empresa {
+            nome;
+            receitaAnual;
+            despesasAnuais;
+
+            constructor(nome, receitaAnual, despesasAnuais) {
+                    this.nome = nome;
+                    this.receitaAnual = receitaAnual;
+                    this.despesasAnuais = despesasAnuais;
+            }
+
+            calcularLucroAnual() {
+                return (this.despesasAnuais - this.receitaAnual)
+            }
+        }
+
+        let empresa1 = new empresa ("365 days", "1000000", "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+        console.log(empresa1)
+        console.log  (`O lucro ANual é: ${empresa1.calcularLucroAnual()}`);
+    </script>
+</body>
+</html>
